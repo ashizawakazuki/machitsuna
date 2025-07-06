@@ -8,6 +8,7 @@ import TalentDetail from './pages/TalentDetail';
 import EventList from './pages/EventList';
 import EventDetail from './pages/EventDetail';
 import Badge from './pages/Badge';
+import Footer from './pages/Footer';
 
 // import Titles from './pages/Titles';
 
@@ -25,6 +26,7 @@ function App() {
         {/* <Route path="/titles" element={<Titles />} /> */}
         {/* 今後ここに他の画面も追加予定 */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
