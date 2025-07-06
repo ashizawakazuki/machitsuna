@@ -119,7 +119,7 @@ const EventList = () => {
               <p><strong>カテゴリー：</strong>{event.category}</p>
               <div className="button-group">
                 <button className="detail-button">
-                  <Link to={`/events/${event.id}`} style={{ color: 'white', textDecoration: 'none' }}>
+                  <Link to={`/event-list/${event.id}`} style={{ color: 'white', textDecoration: 'none' }}>
                     詳細
                   </Link>
                 </button>
