@@ -1,6 +1,7 @@
 // src/pages/TalentBank.js
 import React, { useState } from 'react';
 import './TalentBank.css';
+import { Link } from 'react-router-dom';
 
 const talentData = [
   { id: 1, name: '佐藤 花子', skill: '子どもの教育相談', category: '教育' },
@@ -66,7 +67,11 @@ const TalentBank = () => {
           <p><strong>特技・スキル：</strong>{talent.skill}</p>
           <p><strong>カテゴリー：</strong>{talent.category}</p>
           <div className="button-group">
-            <button className="detail-button">詳細</button>
+            <button className="detail-button">
+              <Link to={`/talent-bank/${talent.id}`} style={{ color: 'white', textDecoration: 'none' }}>
+                詳細
+              </Link>
+            </button>
             <button className="favorite-button">お気に入り</button>
           </div>
         </div>
