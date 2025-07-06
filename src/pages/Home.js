@@ -15,7 +15,7 @@ const Home = () => {
           <img src="/images/people.png" alt="人材バンク" />
           <span>人材バンク</span>
         </Link>
-        <Link to="/events" className="card">
+        <Link to="/event-list" className="card">
           <img src="/images/calendar.png" alt="イベント一覧" />
           <span>イベント一覧</span>
         </Link>
