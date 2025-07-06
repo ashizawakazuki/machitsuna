@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './pages/Header';
 import Home from './pages/Home';
 import TalentBank from './pages/TalentBank';
 import TalentDetail from './pages/TalentDetail';
@@ -13,6 +14,7 @@ import Badge from './pages/Badge';
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/talent-bank" element={<TalentBank />} />
