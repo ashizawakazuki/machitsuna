@@ -19,7 +19,7 @@ const Home = () => {
           <img src="/images/calendar.png" alt="イベント一覧" />
           <span>イベント一覧</span>
         </Link>
-        <Link to="/titles" className="card">
+        <Link to="/badge" className="card">
           <img src="/images/medal.png" alt="称号" />
           <span>称号</span>
         </Link>

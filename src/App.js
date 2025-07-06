@@ -6,6 +6,7 @@ import TalentBank from './pages/TalentBank';
 import TalentDetail from './pages/TalentDetail';
 import EventList from './pages/EventList';
 import EventDetail from './pages/EventDetail';
+import Badge from './pages/Badge';
 
 // import Titles from './pages/Titles';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/talent-bank/:id" element={<TalentDetail />} />
         <Route path="/event-list" element={<EventList />} />
         <Route path="/event-list/:id" element={<EventDetail />} />
+        <Route path="/badge" element={<Badge />} />
         {/* <Route path="/titles" element={<Titles />} /> */}
         {/* 今後ここに他の画面も追加予定 */}
       </Routes>
