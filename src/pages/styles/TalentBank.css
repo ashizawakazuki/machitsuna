@@ -100,33 +100,32 @@
     margin-left: 0.5rem;
   }
 
-  /* 登録ボタン配置 */
-.register-button-container {
-  text-align: center;
-  margin-bottom: 2rem;
-}
+  .register-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-.register-button {
-  padding: 0.5rem 1.2rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  .register-button {
+    padding: 0.5rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-.register-button:hover {
-  background-color: #2f855a;
-}
+  .register-button:hover {
+    background-color: #2f855a;
+  }
 
 /* 各人材カードのタイトル */
-.talent-title {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-}
+  .talent-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
 
 @media (max-width: 768px) {
   .talent-bank-container {
@@ -162,7 +161,6 @@
     font-size: 0.95rem;
   }
 
-  /* ▼ 修正①: セレクトボックス幅を制限し、中央に揃える */
   .category-filter {
     display: flex;
     flex-direction: column;
@@ -170,14 +168,13 @@
   }
 
   .category-filter select {
-    width: 80%; /* ←横幅を抑える */
+    width: 80%;
     max-width: 300px;
     font-size: 0.95rem;
     margin-top: 0.5rem;
-    margin-left: 0; /* ←左マージンを無効にする */
+    margin-left: 0;
   }
 
-  /* ▼ 修正②: ページネーションがモバイルでも中央に見えるように */
   .pagination {
     display: flex;
     flex-wrap: wrap;

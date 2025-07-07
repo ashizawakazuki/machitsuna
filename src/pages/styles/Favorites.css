@@ -11,16 +11,22 @@
     margin-top: 12px;
   }
   
-  .detail-button {
-    padding: 6px 12px;
+  .favorite-detail-button {
+    width: 120px;
+    height: 40px;
     font-size: 14px;
     border-radius: 6px;
     border: none;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
     background-color: #4CAF50;
-
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .tab-switch {
@@ -70,4 +76,65 @@
     background-color: #38a169;
     color: white;
     border: 1px solid #38a169;
+  }
+
+  @media (max-width: 768px) {
+    .favorites-container {
+      padding: 1rem;
+    }
+  
+    .tab-switch {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .tab-switch button {
+      width: 90%;
+      max-width: 240px;
+      font-size: 15px;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .pagination {
+      margin-top: 2rem;
+      margin-bottom: 8rem;
+    }
+  
+    .pagination button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .category-filter select {
+      width: 60%;
+      font-size: 0.95rem;
+      padding: 0.4rem;
+    }
+  
+    .event-card,
+    .talent-card {
+      margin: 0 16px 20px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+  
+    .event-title,
+    .talent-title {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+  
+    .event-card p,
+    .talent-card p {
+      font-size: 0.95rem;
+    }
   }
