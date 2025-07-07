@@ -18,11 +18,11 @@
   }
   
   .card {
-    background: #fff;
+    background-color: #f9f9f9;
     border-radius: 16px;
     padding: 20px;
     width: 80%;
-    max-width: 400px;
+    max-width: 600px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     color: #333;
@@ -30,13 +30,25 @@
     align-items: center;
     gap: 16px;
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   .card:hover {
     transform: scale(1.02);
   }
   
-  .card img {
-    width: 48px;
-    height: 48px;
+  .card-emoji {
+    font-size: 80px;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center; /* ← 中央揃えに */
+    width: 100%;        /* ← カード幅いっぱいに広げる */
   }
