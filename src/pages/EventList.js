@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles/EventList.css';
 import { Link } from 'react-router-dom';
-import categoryList from './data/categoryList';
+import categoryData from './data/categoryData';
 import eventData from './data/eventData';
 
 // 日付を整形（曜日付き）
@@ -46,7 +46,7 @@ const EventList = () => {
       <div className="category-filter">
         <label htmlFor="category">カテゴリーで検索：</label>
         <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
-          {categoryList.map((cat) => (
+          {categoryData.map((cat) => (
             <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>

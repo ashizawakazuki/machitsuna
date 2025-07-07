@@ -1,4 +1,4 @@
-const categoryList = [
+const categoryData = [
   'すべて',
   '教育',
   '人文・社会科学',
@@ -10,4 +10,4 @@ const categoryList = [
   'その他'
 ];
   
-export default categoryList;
+export default categoryData;

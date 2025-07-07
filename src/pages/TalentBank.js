@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './styles/TalentBank.css';
 import { Link } from 'react-router-dom';
 import talentData from './data/talentData';
-import categoryList from './data/categoryList';
+import categoryList from './data/categoryData';
 
 const TalentBank = () => {
   const [currentPage, setCurrentPage] = useState(1);
