@@ -28,8 +28,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left">
-        <Link to="/" className="header-logo-block">
-          <div className="header-logo">まちつな</div>
+        <Link to="/" className="header-logo-block hover-effect">
+          <div className="header-logo"> まちつな</div>
           <div className="header-subtitle">-「まち」と「ひと」をつなぐアプリ-</div>
         </Link>
       </div>
@@ -37,7 +37,7 @@ const Header = () => {
       <div className="header-right">
         {isLoggedIn ? (
           <>
-            <Link to="/favorites" className="header-button">お気に入り</Link>
+            <Link to="/favorites" className="header-favorite">お気に入りリスト</Link>
             <button onClick={handleLogout} className="header-button">ログアウト</button>
           </>
         ) : (
