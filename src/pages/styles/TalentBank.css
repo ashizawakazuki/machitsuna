@@ -128,8 +128,6 @@
   margin-bottom: 0.8rem;
 }
 
-/* モバイル向け：画面幅が768px以下の場合 */
-/* モバイル向け：画面幅が768px以下の場合 */
 @media (max-width: 768px) {
   .talent-bank-container {
     padding: 1rem;
@@ -152,6 +150,7 @@
   .detail-button,
   .favorite-button {
     width: 90%;
+    height: 40px;
     max-width: 220px;
     font-size: 0.85rem;
     padding: 0.6rem 1rem;

@@ -110,7 +110,6 @@
 @media (max-width: 768px) {
   .event-list-container {
     padding: 1rem;
-    padding-bottom: 140px; /* 下にゆとりをもたせる */
   }
 
   .event-card p {
@@ -130,6 +129,7 @@
   .detail-button,
   .favorite-button {
     width: 90%;
+    height: 40px;
     max-width: 220px;
     font-size: 0.85rem;
     padding: 0.6rem 1rem;
