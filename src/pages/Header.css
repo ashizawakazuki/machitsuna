@@ -7,7 +7,7 @@
     padding: 16px 24px;
     border-bottom: 1px solid #ddd;
     font-family: "Helvetica Neue", sans-serif;
-    background-color: #fff;
+    background-color: #f9f9f9;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -41,7 +41,18 @@
   }
   
   .header-button {
-    background-color: #38a169;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .header-favorite {
+    background-color: #FF9800;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -53,4 +64,8 @@
   
   .header-button:hover {
     background-color: #2f855a;
+  }
+
+  .header-favorite:hover {
+    background-color: #a57b40;
   }
