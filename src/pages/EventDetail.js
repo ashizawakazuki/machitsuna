@@ -1,7 +1,7 @@
 // src/pages/EventDetail.js
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import './EventDetail.css';
+import './styles/EventDetail.css';
 
 const eventData = [
   {

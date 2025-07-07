@@ -1,6 +1,6 @@
 // src/pages/TalentBank.js
 import React, { useState } from 'react';
-import './TalentBank.css';
+import './styles/TalentBank.css';
 import { Link } from 'react-router-dom';
 
 const talentData = [

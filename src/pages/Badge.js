@@ -1,5 +1,5 @@
 import React from 'react';
-import './Badge.css';
+import './styles/Badge.css';
 
 const titles = [
   { name: '地域デビュー', count: 1, icon: '🔰' },

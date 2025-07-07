@@ -1,7 +1,7 @@
 // src/pages/TalentDetail.js
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import './TalentDetail.css';
+import './styles/TalentDetail.css';
 
 
 const talentData = [
