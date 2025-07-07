@@ -1,6 +1,6 @@
 // src/pages/EventList.js
 import React, { useState } from 'react';
-import './EventList.css';
+import './styles/EventList.css';
 import { Link } from 'react-router-dom';
 
 // 日付を整形（曜日付き）
