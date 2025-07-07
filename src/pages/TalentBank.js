@@ -50,6 +50,11 @@ const TalentBank = () => {
     <div className="talent-bank-container">
       <h2 className="title">人材バンク一覧</h2>
 
+      {/* 追加：登録ボタン */}
+      <div className="register-button-container">
+        <button className="register-button">人材バンクに登録する</button>
+      </div>
+
       {/* カテゴリー選択 */}
       <div className="category-filter">
         <label htmlFor="category">カテゴリーで検索：</label>
@@ -62,20 +67,25 @@ const TalentBank = () => {
 
       {/* 一覧表示 */}
       {currentTalent.map((talent) => (
-        <div key={talent.id} className="talent-card">
-          <p><strong>名前：</strong>{talent.name}</p>
-          <p><strong>特技・スキル：</strong>{talent.skill}</p>
-          <p><strong>カテゴリー：</strong>{talent.category}</p>
-          <div className="button-group">
-            <button className="detail-button">
-              <Link to={`/talent-bank/${talent.id}`} style={{ color: 'white', textDecoration: 'none' }}>
-                詳細
-              </Link>
-            </button>
-            <button className="favorite-button">お気に入り</button>
-          </div>
-        </div>
-      ))}
+  <div key={talent.id} className="talent-card">
+    {/* 追加：カードのタイトル表示 */}
+    <h3 className="talent-title">{talent.name}さん</h3>
+    <div className="talent-content">
+      <p><strong>特技・スキル：</strong>{talent.skill}</p>
+      <p><strong>カテゴリー：</strong>{talent.category}</p>
+      <div className="button-group">
+        <button className="detail-button">
+          <Link to={`/talent-bank/${talent.id}`} style={{ color: 'white', textDecoration: 'none' }}>
+            詳細
+          </Link>
+        </button>
+        <button className="favorite-button" onClick={() => alert('お気に入りに追加しました')}>
+          お気に入り
+        </button>
+      </div>
+    </div>
+  </div>
+))}
 
       {/* ページネーション */}
       <div className="pagination">
