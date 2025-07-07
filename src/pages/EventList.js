@@ -1,7 +1,8 @@
-// src/pages/EventList.js
 import React, { useState } from 'react';
 import './styles/EventList.css';
 import { Link } from 'react-router-dom';
+import categoryData from './data/categoryData';
+import eventData from './data/eventData';
 
 // 日付を整形（曜日付き）
 const formatDateWithWeekday = (isoString) => {
@@ -14,63 +15,6 @@ const formatDateWithWeekday = (isoString) => {
     .toString()
     .padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}（${day}） ${hour}時${minute !== '00' ? minute + '分' : ''}`;
 };
-
-const eventData = [
-  {
-    id: 1,
-    title: '親子で楽しむ科学教室',
-    date: '2025-07-15T15:00:00',
-    place: '中央公民館',
-    category: '教育',
-  },
-  {
-    id: 2,
-    title: '郷土の歴史を学ぶ会',
-    date: '2025-07-10T14:00:00',
-    place: '郷土資料館',
-    category: '人文・社会科学',
-  },
-  {
-    id: 3,
-    title: 'みんなでストレッチ体操',
-    date: '2025-07-08T10:30:00',
-    place: '市民体育館',
-    category: 'スポーツ',
-  },
-  {
-    id: 4,
-    title: '写真撮影ワークショップ',
-    date: '2025-08-01T13:00:00',
-    place: '文化センター',
-    category: '芸術・文化',
-  },
-  {
-    id: 5,
-    title: 'プログラミング体験会',
-    date: '2025-07-20T11:00:00',
-    place: '青少年センター',
-    category: '産業・技術',
-  },
-  {
-    id: 6,
-    title: '防災講座と避難訓練',
-    date: '2025-07-12T09:00:00',
-    place: '市役所ホール',
-    category: 'その他',
-  },
-];
-
-const categories = [
-  'すべて',
-  '教育',
-  '人文・社会科学',
-  '自然科学',
-  '産業・技術',
-  '芸術・文化',
-  'スポーツ',
-  '家庭生活・趣味',
-  'その他'
-];
 
 const EventList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -102,7 +46,7 @@ const EventList = () => {
       <div className="category-filter">
         <label htmlFor="category">カテゴリーで検索：</label>
         <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
-          {categories.map((cat) => (
+          {categoryData.map((cat) => (
             <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>

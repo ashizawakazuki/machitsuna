@@ -1,19 +1,12 @@
 import React from 'react';
 import './styles/Badge.css';
-
-const titles = [
-  { name: '地域デビュー', count: 1, icon: '🔰' },
-  { name: 'つながりビギナー', count: 3, icon: '🌱' },
-  { name: 'まちづくりプレイヤー', count: 5, icon: '⭐' },
-  { name: 'まちのつなぎ手', count: 10, icon: '🏅' },
-  { name: 'まちつなマスター', count: 20, icon: '👑' },
-];
+import badgeData from './data/badgeData';
 
 // 仮に現在の実績が10回だったとする
 const userCount = 10;
 
 // 現在の称号を判定（最も高い達成済みのものを取得）
-const currentTitle = [...titles].reverse().find(title => userCount >= title.count);
+const currentTitle = [...badgeData].reverse().find(title => userCount >= title.count);
 
 const Badge = () => {
   return (
@@ -38,7 +31,7 @@ const Badge = () => {
       )}
 
       <div className="badge-list">
-        {titles.map((title, index) => {
+        {badgeData.map((title, index) => {
           const achieved = userCount >= title.count;
 
           return (
