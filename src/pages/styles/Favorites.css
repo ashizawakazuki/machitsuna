@@ -1,0 +1,73 @@
+  .favorites-container {
+    max-width: 600px;
+    margin: 60px auto 100px;
+    padding: 20px;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .detail-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    background-color: #4CAF50;
+
+  }
+
+  .tab-switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+  
+  .tab-switch button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #38a169;
+    border-radius: 8px;
+    background-color: white;
+    color: #38a169;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab-switch button:hover {
+    background-color: #e6f4ea;
+  }
+  
+  .tab-switch button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .pagination .active-page {
+    font-weight: bold;
+    background-color: #38a169;
+    color: white;
+    border: 1px solid #38a169;
+  }

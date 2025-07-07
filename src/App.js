@@ -9,6 +9,8 @@ import EventList from './pages/EventList';
 import EventDetail from './pages/EventDetail';
 import Badge from './pages/Badge';
 import Footer from './pages/Footer';
+import Favorites from './pages/Favorites';
+
 
 // import Titles from './pages/Titles';
 
@@ -23,8 +25,7 @@ function App() {
         <Route path="/event-list" element={<EventList />} />
         <Route path="/event-list/:id" element={<EventDetail />} />
         <Route path="/badge" element={<Badge />} />
-        {/* <Route path="/titles" element={<Titles />} /> */}
-        {/* 今後ここに他の画面も追加予定 */}
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
       <Footer />
     </Router>
