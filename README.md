@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# まちつな　 <small>-「まち」と「ひと」をつなぐアプリ -</small>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+「まちつな」は、地域イベントの情報提供やスキルを持つ地域住民とのつながりを促進する、地域活性化のためのWebアプリケーションです。  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ■ セットアップ手順
 
-### `npm start`
+### 1. Node.jsのインストール（npm含む）
+Homebrew を使用して以下のコマンドを実行してください：
+```
+brew install node
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+インストール後、以下のコマンドでバージョンが表示されることを確認してください：
+```
+node -v
+npm -v
+```
+これで Node.js と npm の導入は完了です。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. React アプリの作成
+任意の作業ディレクトリに移動し、以下を実行します。
+```
+npx create-react-app machitsuna
+```
+※ 実行時に create-react-appの使用確認が出た場合は y を入力して進めてください。
 
-### `npm test`
+### 3. 作成したディレクトリに移動
+```
+cd machitsuna
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. アプリの起動
+以下のコマンドで開発サーバーを起動します。
+```
+npm start
+```
+起動後、ブラウザで以下にアクセスしてください。<br />
+http://localhost:3000
 
-### `npm run build`
+すでにポート番号3000番が使用されている場合は、以下の対応を行ってください。
+ - Y を入力することで自動的にポート3001などに変更されます。
+ - または、以下のように指定ポートで明示的に起動も可能です。
+```
+ PORT=3001 npm start
+ ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 5. ライブラリの導入
+React Router（v6）を使用するため、以下のコマンドでインストールします。
+```
+npm install react-router-dom
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ■ 使用技術・ライブラリ
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| カテゴリ | 技術・ライブラリ |
+| ---- | ---- |
+| フロントエンド | React |
+| ルーティング | react-router-dom |
+| 状態管理 | useState / useEffect |
+| スタイリング | CSS（メディアクエリ含むレスポンシブ対応） |
+| バックエンド | なし（ダミーデータにて構成） |
+| AI支援 | ChatGPT 4o-mini（無料アカウント） |
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ■ 実装機能の説明
+### 1. トップページ
+  -	アプリ概要・機能の紹介
+  -	各画面への導線となるカードリンク（人材バンク・地域イベント・称号）
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. 人材バンク機能
+  - 地域の人材一覧表示
+  - カテゴリーによる検索機能
+  - 詳細画面の表示（指導料・資格・活動内容など）
+  - 「お気に入り」登録機能あり
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. 地域イベント機能
+  - イベントの一覧表示
+  - カテゴリーによる検索機能
+  - 詳細画面の表示（主催・日時・会場・連絡先など）
+  - 「お気に入り」登録機能あり
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. 称号画面
+  - イベント参加・人材依頼の累計回数に応じた称号表示
+  - 全5段階の称号
 
-## Learn More
+### 5. お気に入りリスト
+  - 「人材バンク」「地域イベント」のお気に入りをタブ切替で確認
+  - カテゴリー別の検索・ページネーション対応
+  - 一覧から詳細ページへのリンク付き
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. 共通UI・レスポンシブ対応
+  - ヘッダー：ログイン・新規登録・お気に入りリスト付き
+  - フッター：タブ形式の画面下固定ナビゲーション
+  - モバイルファーストなレスポンシブデザイン対応
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## ■  動作確認方法
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+以下の手順でローカル環境にセットアップできます。
 
-### Analyzing the Bundle Size
+### 1. リポジトリをクローン
+リポジトリをクローンし、プロジェクトディレクトリに移動します。
+```
+git clone https://github.com/ashizawakazuki/machitsuna.git
+cd machitsuna
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2. パッケージのインストール（初回のみ）
+```
+npm install
+```
 
-### Making a Progressive Web App
+### 3. アプリの起動
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm start
+```
+起動後、ブラウザで以下にアクセスしてください。<br />
+http://localhost:3000
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+すでにポート番号3000番が使用されている場合は、以下の対応を行ってください。
+ - Y を入力することで自動的にポート3001などに変更されます。
+ - または、以下のように指定ポートで明示的に起動も可能です。
+```
+ PORT=3001 npm start
+ ```
