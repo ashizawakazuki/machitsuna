@@ -18,7 +18,6 @@
     font-weight: bold;
   }
   
-  /* 各テキスト項目を左揃えにするためのラッパー */
   .event-content p {
     width: 100%;
     text-align: left;
@@ -32,9 +31,9 @@
   
   .back-link {
     align-self: flex-start;
-  margin-bottom: 20px;
-  color: #007acc;
-  text-decoration: none;
+    margin-bottom: 20px;
+    color: #007acc;
+    text-decoration: none;
   }
   
   .back-link:hover {
