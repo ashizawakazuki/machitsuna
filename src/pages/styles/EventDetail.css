@@ -39,3 +39,25 @@
   .back-link:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    .event-detail {
+      margin: 20px 16px; /* 左右に余白を確保 */
+      padding: 16px;
+    }
+  
+    .event-title {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  
+    .event-detail p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+  
+    .back-link {
+      font-size: 14px;
+    }
+  }
