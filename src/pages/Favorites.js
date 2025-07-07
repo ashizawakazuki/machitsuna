@@ -83,7 +83,7 @@ const Favorites = () => {
                     <p><strong>カテゴリー：</strong>{event.category}</p>
                     <div className="button-group">
                       <Link to={`/event-list/${event.id}`}>
-                        <button className="detail-button">詳細</button>
+                        <button className="favorite-detail-button">詳細</button>
                       </Link>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const Favorites = () => {
                     <p><strong>カテゴリー：</strong>{talent.category}</p>
                     <div className="button-group">
                       <Link to={`/talent-bank/${talent.id}`}>
-                        <button className="detail-button">詳細</button>
+                        <button className="favorite-detail-button">詳細</button>
                       </Link>
                     </div>
                   </div>

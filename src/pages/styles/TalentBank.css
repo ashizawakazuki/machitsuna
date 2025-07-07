@@ -64,6 +64,7 @@
   .pagination {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom:8rem;
   }
   
   .pagination button {
@@ -99,30 +100,91 @@
     margin-left: 0.5rem;
   }
 
-  /* 登録ボタン配置 */
-.register-button-container {
-  text-align: center;
-  margin-bottom: 2rem;
-}
+  .register-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-.register-button {
-  padding: 0.5rem 1.2rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  .register-button {
+    padding: 0.5rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-.register-button:hover {
-  background-color: #2f855a;
-}
+  .register-button:hover {
+    background-color: #2f855a;
+  }
 
 /* 各人材カードのタイトル */
-.talent-title {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
+  .talent-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+@media (max-width: 768px) {
+  .talent-bank-container {
+    padding: 1rem;
+  }
+
+  .talent-card p {
+    font-size: 0.95rem;
+  }
+
+  .talent-title {
+    font-size: 1.1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .detail-button,
+  .favorite-button {
+    width: 90%;
+    height: 40px;
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .register-button {
+    width: 90%;
+    max-width: 240px;
+    font-size: 0.95rem;
+  }
+
+  .category-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-filter select {
+    width: 80%;
+    max-width: 300px;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
 }
