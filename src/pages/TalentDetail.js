@@ -15,9 +15,8 @@ const TalentDetail = () => {
     <div className="talent-detail-wrapper"> {/* ラッパー追加 */}
       <div className="talent-detail">
         <Link to="/talent-bank" className="back-link">{'＜'}一覧へ戻る</Link>
-        <h2>詳細画面</h2>
+        <h2>{talent.name} さん</h2>
         <div className="event-content">
-          <p><strong>名前：</strong>{talent.name} さん</p>
           <p><strong>特技・スキル：</strong>{talent.skill}</p>
           <p><strong>カテゴリー：</strong>{talent.category}</p>
           <p><strong>指導料：</strong>無料</p>
