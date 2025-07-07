@@ -123,7 +123,9 @@ const EventList = () => {
                     詳細
                   </Link>
                 </button>
-                <button className="favorite-button">お気に入り</button>
+                <button className="favorite-button" onClick={() => alert('お気に入りに追加しました')}>
+                  お気に入り
+                </button>
               </div>
             </div>
           </div>

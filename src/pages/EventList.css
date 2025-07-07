@@ -32,6 +32,7 @@
   }
   
   .detail-button {
+    width: 100px;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 6px;
@@ -42,10 +43,11 @@
   }
   
   .detail-button:hover {
-    background-color: #45a049;
+    background-color: #2f855a;
   }
   
   .favorite-button {
+    width: 100px;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 6px;
@@ -56,7 +58,7 @@
   }
   
   .favorite-button:hover {
-    background-color: #fb8c00;
+    background-color: #a57b40;
   }
   
   .pagination {
