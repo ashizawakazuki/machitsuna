@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './styles/TalentBank.css';
 import { Link } from 'react-router-dom';
 import talentData from './data/talentData';
-import categoryList from './data/categoryData';
+import categoryDate from './data/categoryData';
 
 const TalentBank = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -36,7 +36,7 @@ const TalentBank = () => {
       <div className="category-filter">
         <label htmlFor="category">カテゴリーで検索：</label>
         <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
-          {categoryList.map((cat) => (
+          {categoryDate.map((cat) => (
             <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>
