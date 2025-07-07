@@ -7,9 +7,9 @@
   }
   
   .badge-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 24px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .badge-list {
@@ -58,4 +58,30 @@
   .badge-condition {
     font-size: 12px;
     color: #777;
+  }
+
+  .user-count-text {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .user-count-number {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 0.2rem;
+    color: #4CAF50;
+  }
+  
+  .current-title-text {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3.0rem;
+  }
+  
+  .current-title-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 0.3rem;
+    color: #4A5568;
   }
