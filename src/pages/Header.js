@@ -1,12 +1,11 @@
 // src/components/Header.js
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles/Header.css';
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
 
   const handleLogin = () => {
     if (window.confirm('ログインしますか？')) {
