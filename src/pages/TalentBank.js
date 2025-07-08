@@ -51,11 +51,9 @@ const TalentBank = () => {
       <p><strong>特技・スキル：</strong>{talent.skill}</p>
       <p><strong>カテゴリー：</strong>{talent.category}</p>
       <div className="button-group">
-        <button className="detail-button">
-          <Link to={`/talent-bank/${talent.id}`} style={{ color: 'white', textDecoration: 'none' }}>
-            詳細
-          </Link>
-        </button>
+        <Link to={`/talent-bank/${talent.id}`} style={{ color: 'white', textDecoration: 'none' }}>
+          <button className="detail-button">詳細</button>
+        </Link>
         <button className="favorite-button" onClick={() => alert('お気に入りに追加しました')}>
           お気に入り
         </button>
