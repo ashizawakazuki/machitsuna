@@ -62,11 +62,9 @@ const EventList = () => {
               <p><strong>会場：</strong>{event.place}</p>
               <p><strong>カテゴリー：</strong>{event.category}</p>
               <div className="button-group">
-                <button className="detail-button">
-                  <Link to={`/event-list/${event.id}`} style={{ color: 'white', textDecoration: 'none' }}>
-                    詳細
-                  </Link>
-                </button>
+                <Link to={`/event-list/${event.id}`} style={{ color: 'white', textDecoration: 'none' }}>
+                  <button className="detail-button">詳細</button>
+                </Link>
                 <button className="favorite-button" onClick={() => alert('お気に入りに追加しました')}>
                   お気に入り
                 </button>
